@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY GALLERY</title>
+    <link rel="stylesheet" href="gallery.css">
+    <script src="gallery.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>GALLERY</h1>
+        <div class="button-container">
+            <a href="index.html" class="button">About Me</a>
+            <a href="hobbies.html" class="button">Hobbies and Interests</a>
+            <a href="gallery.html" class="button">My Gallery</a>
+        </div>
+    </header>
+
+    
+    <section id="Desc">
+        <p><i>This is my gallery.</i></p>
+        <p>Most of the pictures here are from beaches, sunsets, and food since these are the things that I usually like taking pictures of. Click on the photos to see a better quality of it.</p>
+    </section>
+
+
+    <div class="gallery-row">
+        <div class="gallery-column">
+            <img src="seollem.jpg" alt="Picture of a Seollem Cafe." onclick="openImage(this);">
+        </div>
+        <div class="gallery-column">
+            <img src="airplane.jpg" alt="Picture of the skies from the airplane window" onclick="openImage(this);">
+        </div>
+        <div class="gallery-column">
+            <img src="beach.jpg" alt="Picture of me in a beach in Palawan" onclick="openImage(this);">
+        </div>
+        <div class="gallery-column">
+            <img src="church.jpg" alt="Picture of Immaculate Conception Cathedral in Puerto Princesa, Palawan." onclick="openImage(this);">
+        </div>
+        <div class="gallery-column">
+            <img src="coffee.jpg" alt="Picture of coffee from Don Macchiatos." onclick="openImage(this);">
+        </div>
+        <div class="gallery-column">
+            <img src="school.jpg" alt="Picture of the building of my school in high school." onclick="openImage(this);">
+        </div>
+        <div class="gallery-column">
+            <img src="beach2.jpg" alt="Picture of sea in Palawan" onclick="openImage(this);">
+        </div>
+        <div class="gallery-column">
+            <img src="house.jpg" alt="Picture of outside view of my house." onclick="openImage(this);">
+        </div>
+    </div>
+    
+
+    <div class="image-modal" id="imageModal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="expandedImg">
+        <div id="imgCaption"></div>
+    </div>
+    
+    
+    <footer>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">GO TO TOP</button>
+    </footer>
+    
+</body>
+</html>
