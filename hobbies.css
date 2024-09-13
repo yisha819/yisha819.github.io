@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    color: #333;
+    background-color: #D3DADC;
+}
+
+header {
+    background-color: #718eaf;
+    color: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 42px;
+    letter-spacing: 2px;
+    color: #d2fcff;
+}
+
+/*Labels for hobbies and interests */
+#Hobbies-title, #interests-title {
+    border: 1px;
+    padding: 1px 80px;
+    border-radius: 5px;
+    background-color: #e8f4f7;
+    white-space: nowrap;
+    max-width: 100%;
+    width: fit-content;
+}
+
+/*Paragraph font (hobbies and interests) */
+#Hobbies p, #interests h3 {
+    font-style: oblique;
+}
+
+/*Bg of hobbies section */
+#Hobbies {
+    background-color: #E8E2DA;
+}
+
+/* Tab for interests section */
+.tab-titles {
+    display: flex;
+    justify-content: space-around;
+    background-color: #D6C9B4;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.tab-titles .title {
+    flex: none;
+    width: 280px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #E8E2DA;
+    color: #333;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    flex: 0 0 auto;
+}
+
+.tab-titles .title:hover, .tab-titles .title.active {
+    background-color: #B9A79D;
+    color: #000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    background-color: rgba(214, 201, 180, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.tab-content.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.tab-content .content {
+    text-align: center;
+}
+
+.tab-content .content img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/*Additional design for interests section */
+section h2 {
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section {
+    margin: 32px auto;
+    max-width: 1000px;
+    background: #E8E2DA;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 18px;
+    color: #555;
+    text-align: center;
+    line-height: 1.7;
+}
+
+/* buttons for navigation */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.button {
+    padding: 12px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #D6C9B4;
+    text-align: center;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #D3DADC;
+    transform: translateY(-3px);
+}
+
+/*button (GO TO TOP) */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    color: #D6C9B4;
+    cursor: pointer;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+#myBtn:hover {
+    background: linear-gradient(45deg, #718eaf, #567b81);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
